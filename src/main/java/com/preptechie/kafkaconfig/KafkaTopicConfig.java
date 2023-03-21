@@ -9,8 +9,9 @@ import org.springframework.kafka.config.TopicBuilder;
 public class KafkaTopicConfig {
 
     @Bean
-    public NewTopic javaguidesTopic(){
+    public NewTopic KafkaTopic(){
         return TopicBuilder.name(AppConstants.TOPIC_NAME)
                 .build();
+
     }
 }
